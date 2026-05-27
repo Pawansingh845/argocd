@@ -1,7 +1,7 @@
 apiVersion: v1
 kind : Pod 
 metadata :
-  name: anil
+  name: {{.name}}
   # labels:
   #   app : nginx
   #   env : dev
@@ -14,8 +14,19 @@ spec:
       ports:
         - containerPort: 80
 
-    
-    - name: nginx1
+---
+apiVersion: v1
+kind : Pod 
+metadata :
+  name: anil1
+  # labels:
+  #   app : nginx
+  #   env : dev
+  #   tier : frontend
+
+spec:
+  containers:
+    - name: nginx
       image: nginx
       ports:
-        - containerPort: 81
+        - containerPort: 80
