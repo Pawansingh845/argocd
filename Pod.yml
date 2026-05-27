@@ -5,16 +5,16 @@ metadata:
   name: nginx-deployment
 
 spec:
-  replicas: 2
+  replicas: 7
 
-  selector:
-    matchLabels:
-      app: nginx
+  # selector:
+  #   matchLabels:
+  #     app: nginx
 
-  template:
-    metadata:
-      labels:
-        app: nginx
+  # template:
+  #   metadata:
+  #     labels:
+  #       app: nginx
 
     spec:
       containers:
