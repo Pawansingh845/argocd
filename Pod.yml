@@ -18,7 +18,7 @@ spec:
 
     spec:
       containers:
-        - name: nginx
-          image: nginx
+        - name: pawan
+          image: pawan:v1
           ports:
             - containerPort: 80
